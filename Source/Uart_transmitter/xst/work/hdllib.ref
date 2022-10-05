@@ -1,0 +1,8 @@
+EN fifo_tx NULL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/FIFO_TX.vhd" sub00/vhpl06 1664969782
+AR fifo_tx behavioral "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/FIFO_TX.vhd" sub00/vhpl07 1664969783
+EN top_module NULL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Top_module.vhd" sub00/vhpl02 1664969784
+EN uart_transmitter NULL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" sub00/vhpl00 1664969780
+EN baudrate_generator NULL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Baudrate_Generator.vhd" sub00/vhpl04 1664969778
+AR baudrate_generator behavioral "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Baudrate_Generator.vhd" sub00/vhpl05 1664969779
+AR uart_transmitter behavioral "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" sub00/vhpl01 1664969781
+AR top_module behavioral "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Top_module.vhd" sub00/vhpl03 1664969785

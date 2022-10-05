@@ -1,0 +1,5 @@
+vhdl work "Uart_Transmitter.vhd"
+vhdl work "FIFO_TX.vhd"
+vhdl work "Baudrate_Generator.vhd"
+vhdl work "Top_module.vhd"
+vhdl work "../../Prj/test_bench_ver2.vhd"

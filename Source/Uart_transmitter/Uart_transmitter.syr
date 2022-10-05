@@ -1,0 +1,421 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: Uart_transmitter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Uart_transmitter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Uart_transmitter"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-pq208
+
+---- Source Options
+Top Module Name                    : Uart_transmitter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" in Library work.
+Entity <uart_transmitter> compiled.
+Entity <uart_transmitter> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Uart_transmitter> in library <work> (architecture <behavioral>) with generics.
+	d_bit = 8
+	sb_tick = 16
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <Uart_transmitter> in library <work> (Architecture <behavioral>).
+	d_bit = 8
+	sb_tick = 16
+Entity <Uart_transmitter> analyzed. Unit <Uart_transmitter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Uart_transmitter>.
+    Related source file is "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd".
+WARNING:Xst:646 - Signal <n_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CKHT                      (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_r>.
+    Found 4-bit adder for signal <s_n$addsub0000> created at line 105.
+    Found 4-bit register for signal <s_r>.
+    Found 1-bit register for signal <tx_r>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Uart_transmitter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state_r/FSM> on signal <state_r[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Uart_transmitter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Uart_transmitter, actual ratio is 0.
+FlipFlop state_r_FSM_FFd1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Uart_transmitter.ngr
+Top Level Output File Name         : Uart_transmitter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 57
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT2_D                      : 1
+#      LUT3                        : 28
+#      LUT4                        : 16
+#      MUXF5                       : 10
+# FlipFlops/Latches                : 16
+#      FDC                         : 15
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 11
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-5 
+
+ Number of Slices:                       25  out of   4656     0%  
+ Number of Slice Flip Flops:             16  out of   9312     0%  
+ Number of 4 input LUTs:                 47  out of   9312     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    158     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CKHT                               | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST_inv(RST_inv1_INV_0:O)          | NONE(b_r_0)            | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.299ns (Maximum Frequency: 232.631MHz)
+   Minimum input arrival time before clock: 5.299ns
+   Maximum output required time after clock: 5.793ns
+   Maximum combinational path delay: 6.138ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CKHT'
+  Clock period: 4.299ns (frequency: 232.631MHz)
+  Total number of paths / destination ports: 137 / 16
+-------------------------------------------------------------------------
+Delay:               4.299ns (Levels of Logic = 3)
+  Source:            s_r_2 (FF)
+  Destination:       b_r_7 (FF)
+  Source Clock:      CKHT rising
+  Destination Clock: CKHT rising
+
+  Data Path: s_r_2 to b_r_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.514   0.568  s_r_2 (s_r_2)
+     LUT4:I1->O           10   0.612   0.753  state_r_cmp_eq00001 (state_r_cmp_eq0000)
+     LUT4:I3->O            1   0.612   0.360  b_r_mux0000<0>11 (N01)
+     LUT4:I3->O            1   0.612   0.000  b_r_mux0000<7>1 (b_r_mux0000<7>)
+     FDC:D                     0.268          b_r_7
+    ----------------------------------------
+    Total                      4.299ns (2.618ns logic, 1.681ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CKHT'
+  Total number of paths / destination ports: 52 / 15
+-------------------------------------------------------------------------
+Offset:              5.299ns (Levels of Logic = 4)
+  Source:            S_TICK (PAD)
+  Destination:       b_r_7 (FF)
+  Destination Clock: CKHT rising
+
+  Data Path: S_TICK to b_r_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.106   1.016  S_TICK_IBUF (S_TICK_IBUF)
+     LUT2:I0->O            8   0.612   0.712  b_r_mux0000<0>21_SW1 (N24)
+     LUT4:I1->O            1   0.612   0.360  b_r_mux0000<0>11 (N01)
+     LUT4:I3->O            1   0.612   0.000  b_r_mux0000<7>1 (b_r_mux0000<7>)
+     FDC:D                     0.268          b_r_7
+    ----------------------------------------
+    Total                      5.299ns (3.210ns logic, 2.089ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CKHT'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              5.793ns (Levels of Logic = 2)
+  Source:            state_r_FSM_FFd1 (FF)
+  Destination:       TX_DONE_TICK (PAD)
+  Source Clock:      CKHT rising
+
+  Data Path: state_r_FSM_FFd1 to TX_DONE_TICK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.514   1.141  state_r_FSM_FFd1 (state_r_FSM_FFd1)
+     LUT3:I0->O            1   0.612   0.357  TX_DONE_TICK1 (TX_DONE_TICK_OBUF)
+     OBUF:I->O                 3.169          TX_DONE_TICK_OBUF (TX_DONE_TICK)
+    ----------------------------------------
+    Total                      5.793ns (4.295ns logic, 1.498ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.138ns (Levels of Logic = 3)
+  Source:            S_TICK (PAD)
+  Destination:       TX_DONE_TICK (PAD)
+
+  Data Path: S_TICK to TX_DONE_TICK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.106   0.894  S_TICK_IBUF (S_TICK_IBUF)
+     LUT3:I2->O            1   0.612   0.357  TX_DONE_TICK1 (TX_DONE_TICK_OBUF)
+     OBUF:I->O                 3.169          TX_DONE_TICK_OBUF (TX_DONE_TICK)
+    ----------------------------------------
+    Total                      6.138ns (4.887ns logic, 1.251ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.37 secs
+ 
+--> 
+
+Total memory usage is 229592 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

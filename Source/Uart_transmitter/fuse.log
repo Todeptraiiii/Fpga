@@ -1,0 +1,29 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/test_bench_ver2_isim_beh.exe" -prj "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/test_bench_ver2_beh.prj" "work.test_bench_ver2" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" into library work
+Parsing VHDL file "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/FIFO_TX.vhd" into library work
+Parsing VHDL file "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Baudrate_Generator.vhd" into library work
+Parsing VHDL file "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Top_module.vhd" into library work
+Parsing VHDL file "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/../../Prj/test_bench_ver2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160304 KB
+Fuse CPU Usage: 375 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Baudrate_Generator [\Baudrate_Generator(9,163)\]
+Compiling architecture behavioral of entity Uart_transmitter [\Uart_transmitter(8,16)\]
+Compiling architecture behavioral of entity FIFO_TX [\FIFO_TX(8,2)\]
+Compiling architecture behavioral of entity Top_module [\Top_module(9,163,8,16,8,2)\]
+Compiling architecture behavior of entity test_bench_ver2
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/test_bench_ver2_isim_beh.exe
+Fuse Memory Usage: 176048 KB
+Fuse CPU Usage: 562 ms

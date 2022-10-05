@@ -1,0 +1,4 @@
+work	"Baudrate_Generator.vhd"
+work	"FIFO_TX.vhd"
+work	"Top_module.vhd"
+work	"Uart_Transmitter.vhd"

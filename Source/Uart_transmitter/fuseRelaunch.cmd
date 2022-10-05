@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/test_bench_ver2_isim_beh.exe" -prj "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/test_bench_ver2_beh.prj" "work.test_bench_ver2" 

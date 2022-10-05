@@ -1,0 +1,4 @@
+vhdl work "D:\FPGA\FPGA with VHDL\project\UART_Transmitter\Source\Uart_transmitter\Uart_Transmitter.vhd"
+vhdl work "D:\FPGA\FPGA with VHDL\project\UART_Transmitter\Source\Uart_transmitter\FIFO_TX.vhd"
+vhdl work "D:\FPGA\FPGA with VHDL\project\UART_Transmitter\Source\Uart_transmitter\Baudrate_Generator.vhd"
+vhdl work "D:\FPGA\FPGA with VHDL\project\UART_Transmitter\Source\Uart_transmitter\Top_module.vhd"

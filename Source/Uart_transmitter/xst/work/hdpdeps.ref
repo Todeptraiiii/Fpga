@@ -1,0 +1,33 @@
+V3 15
+FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Baudrate_Generator.vhd" 2022/10/05.17:55:37 P.20131013
+EN work/Baudrate_Generator 1664969778 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Baudrate_Generator.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Baudrate_Generator/Behavioral 1664969779 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Baudrate_Generator.vhd" \
+      EN work/Baudrate_Generator 1664969778
+FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/FIFO_TX.vhd" 2022/10/05.18:35:26 P.20131013
+EN work/FIFO_TX 1664969782 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/FIFO_TX.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/FIFO_TX/Behavioral 1664969783 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/FIFO_TX.vhd" \
+      EN work/FIFO_TX 1664969782
+FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Top_module.vhd" 2022/10/05.18:35:01 P.20131013
+EN work/Top_module 1664969784 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Top_module.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Top_module/Behavioral 1664969785 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Top_module.vhd" \
+      EN work/Top_module 1664969784 CP Baudrate_Generator CP Uart_transmitter \
+      CP FIFO_TX
+FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" 2022/10/05.17:56:06 P.20131013
+EN work/Uart_transmitter 1664969780 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Uart_transmitter/Behavioral 1664969781 \
+      FL "D:/FPGA/FPGA with VHDL/project/UART_Transmitter/Source/Uart_transmitter/Uart_Transmitter.vhd" \
+      EN work/Uart_transmitter 1664969780

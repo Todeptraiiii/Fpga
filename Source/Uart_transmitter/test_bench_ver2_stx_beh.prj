@@ -1,0 +1,5 @@
+vhdl isim_temp "Uart_Transmitter.vhd"
+vhdl isim_temp "FIFO_TX.vhd"
+vhdl isim_temp "Baudrate_Generator.vhd"
+vhdl isim_temp "Top_module.vhd"
+vhdl isim_temp "../../Prj/test_bench_ver2.vhd"
